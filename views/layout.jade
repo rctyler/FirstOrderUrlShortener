@@ -12,13 +12,12 @@ html( lang="en" ng-app="app")
           include ../public/stylesheets/style.css
         //- Bootswatch Theme
         +bootswatch("flatly")
-        
+        script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js' )
     body(ng-controller="appController" style="padding-bottom:10rem;")
         block navBarContent
         .container
             block content
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
-        script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
         script(src='/javascripts/controller.js')
         script(src='/javascripts/global.js')

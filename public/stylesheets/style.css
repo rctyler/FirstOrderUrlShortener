@@ -1,4 +1,4 @@
-a.results {
+a.link {
     color: #F39C12;
     text-decoration: underline;
 }
@@ -37,6 +37,11 @@ h1#about {
 
 p#about {
     font-size: 18px
+}
+
+img.starwars {
+    width: 100%;
+    max-width:800px !important;
 }
 
 /* Extra Small Devices, Phones */ 

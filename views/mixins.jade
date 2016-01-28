@@ -26,7 +26,7 @@ mixin nav_item(href, active)
 //- Panel mixin
 mixin panel(heading, style)
     - var style = (typeof style === 'undefined') ? "default" : style
-    div( class=["panel", "panel-" + style] ng-show="longUrl")
+    div( class=["panel", "panel-" + style] ng-cloak ng-show="longUrl")
         .panel-heading= heading
         .panel-body
             block

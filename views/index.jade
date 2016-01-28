@@ -16,7 +16,10 @@ block content
         .col-md-4.col-sm-6.col-xs-12
             +panel("Results", "primary") 
                 strong Long Url:
-                |  <span><a ng-cloak class='results' href='http://{{ longUrl }}'>{{ longUrl }}</a></span>
+                |  <span><a ng-cloak class='link' href='http://{{ longUrl }}'>{{ longUrl }}</a></span>
                 br
                 strong Short Url:
-                |  <span><a ng-cloak class='results' href='http://localhost:3000/{{ shortUrlHash }}'>{{ shortUrl }}</a></span>
+                |  <span><a ng-cloak class='link' href='http://localhost:3000/{{ shortUrlHash }}'>{{ shortUrl }}</a></span>
+    .row
+        .col-xs-12
+            img.starwars.img-responsive.img-rounded(src="http://images5.alphacoders.com/640/640375.jpg")
