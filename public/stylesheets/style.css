@@ -1,0 +1,68 @@
+a.results {
+    color: #F39C12;
+    text-decoration: underline;
+}
+
+.navbar {
+    border-radius: 0px !important;
+}
+
+#inputUserName {
+    height: 21;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#submitBtn {
+    line-height: 16px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+img#logo {
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+#about {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1#about {
+    font-size: 36px
+}
+
+p#about {
+    font-size: 18px
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #submitBtn {
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width : 470px) {
+    #submitBtn {
+        margin-top: 10px !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

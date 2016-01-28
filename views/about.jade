@@ -1,0 +1,10 @@
+extends layout
+extends navbar
+block content
+    .jumbotron#about
+        .container
+            - var aboutText = "As a friend once said, \"there's too much internet it needs to shortened!\" There is too much Internet, so shorten all the things! Why not let the world have one more URL minifier? Absolutely no one's using it, so satisfy your inner hipster and be the first one! It's also open source, so while your at it make it better!"
+            
+            h1#about Tyl.er URL Shortener
+            p#about= aboutText
+            p: +button("warning", "more.htm", "medium") GitHub &#187;

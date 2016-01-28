@@ -1,0 +1,24 @@
+include mixins
+
+doctype
+html( lang="en" ng-app="app")
+    head
+        title Tyl.er Url Shortener
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Baking Bootstrap Snippets with Jade' )
+        style
+          include ../public/stylesheets/style.css
+        //- Bootswatch Theme
+        +bootswatch("flatly")
+        
+    body(ng-controller="appController" style="padding-bottom:10rem;")
+        block navBarContent
+        .container
+            block content
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+        script(src='/javascripts/controller.js')
+        script(src='/javascripts/global.js')
