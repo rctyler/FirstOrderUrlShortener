@@ -4,7 +4,7 @@ extends navbar
 block content
     .row       
        .col-xs-12
-            label#inputUserName= "Shorten URL:"
+            h2 Shorten URL
     .row
        .col-xs-12
             input#inputUserName(ng-model='longUrl' ng-change='clearShortUrl()' type='text', placeholder='Enter long url', size='43rem')
@@ -22,4 +22,5 @@ block content
                 |  <span><a ng-cloak class='link' href='http://localhost:3000/{{ shortUrlHash }}'>{{ shortUrl }}</a></span>
     .row
         .col-xs-12
+            p Use this simple Star Wars themed URL minifier. Your wordspace is valuable, so don't waste it with long urls that demand too much of it! 
             img.starwars.img-responsive.img-rounded(src="http://images5.alphacoders.com/640/640375.jpg")
