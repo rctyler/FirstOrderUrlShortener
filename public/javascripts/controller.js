@@ -9,7 +9,7 @@ app.controller('appController', function($scope, $http) {
     $scope.processUrl = function(url) {
         $http.post("/shortenUrl", { url: url }).success(function(data) {
             $scope.shortUrl = data.shortUrl;
-            $scope.shortUrlHash = data.shortUrl.replace("tyl.er/", "");
+            $scope.shortUrlHash = data.shortUrl.replace("firstord.er/", "");
         });
     };
 });
