@@ -3,7 +3,19 @@ include mixins
 extends layout
 
 block navBarContent
-    +nav("FirstOrd.er URL Shortener", "dropdown_menu", "default", "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Galactic_Empire_emblem.svg/600px-Galactic_Empire_emblem.svg.png")
-        +nav_item("/index.html") Home
-        +nav_item("/about.html") About
-        +nav_item("/contact.html") Contact
+     nav(role="navigation", class=["navbar", "navbar-default", "navbar-fixed-top"] )
+        .navbar-header
+            button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#dropdown_menu", aria-expanded="false", aria-controls="navbar")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.pull-left(href='/index.html')
+                img#logo(height="40px", weight="40px", src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Galactic_Empire_emblem.svg/600px-Galactic_Empire_emblem.svg.png")
+            a.navbar-brand(href='/index.html')= "FirstOrd.er URL Shortener"
+ 
+        .collapse.navbar-collapse( id="dropdown_menu" )
+            ul.nav.navbar-nav
+                +nav_item("/index.html") Home
+                +nav_item("/about.html") About
+                +nav_item("/contact.html") Contact

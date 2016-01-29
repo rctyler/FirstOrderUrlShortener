@@ -1,24 +1,6 @@
 mixin bootswatch(theme)
     link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/" + theme + "/bootstrap.min.css", rel="stylesheet")
 
-//- Navbar mixins
-mixin nav(name, id, style, img)
-    - var style = (typeof style === 'undefined') ? "default" : style
-    nav( role="navigation", class=["navbar", "navbar-" + style, "navbar-fixed-top"] )
-        .navbar-header
-            button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#" + id, aria-expanded="false", aria-controls="navbar")
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.pull-left(href='/index.html')
-                img#logo(height="40px", weight="40px", src=img)
-            a.navbar-brand(href='/index.html')= name
- 
-        .collapse.navbar-collapse( id=id )
-            ul.nav.navbar-nav
-                block
- 
 mixin nav_item(href, active)
     li(class=active): a( href=href )
         block
@@ -31,23 +13,6 @@ mixin panel(heading, style)
         .panel-body
             block
 
-///- Button mixin
-mixin button(style, href, size, id, clickEvent)
-    - var style = (typeof style === 'undefined') ? "default" : style
-    - var href = (typeof href === 'undefined') ? "#" : href
-    case size
-        when "large"
-            - size = "btn-lg"
-        when "small"
-            - size = "btn-sm"
-        when "mini"
-            - size = "btn-xs"
- 
-    - var ngClick = (typeof clickEvent !== 'undefined') ? clickEvent : "";
- 
-    a( ng-click=ngClick id=id, class=["btn", "btn-" + style, size], href=href )
-        block
-        
 //- Alert mixin
 mixin alert(style)
     div( class=["alert", "alert-dismissable", "alert-" + style] )

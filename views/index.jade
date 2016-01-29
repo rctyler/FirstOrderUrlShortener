@@ -8,7 +8,7 @@ block content
     .row
        .col-xs-12
             input#inputUserName(ng-model='longUrl' ng-change='clearShortUrl()' type='text', placeholder='Enter long url', size='43rem')
-            +button("warning", "#", "small", "submitBtn", "processUrl(longUrl)") Shorten
+            a(ng-click="processUrl(longUrl)" id="shortenBtn", class=["btn", "btn-warning", "btn-sm"])= "Shorten"
     .row
         .col-xs-12
             br
