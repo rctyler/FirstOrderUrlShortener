@@ -7,17 +7,18 @@ block content
             h2 Shorten URL
     .row
        .col-xs-12
-            input#inputUserName(ng-model='longUrl' ng-change='clearShortUrl()' type='text', placeholder='Enter long url' value="{{ longUrl }}", size='43rem')
-            a(ng-click="processUrl(longUrl)" id="shortenBtn", class=["btn", "btn-warning", "btn-sm"])= "Shorten"
+            input#inputLongUrl(ng-model='longUrl' ng-change='processLongUrl()' type='text', placeholder='Enter long url' value="{{ longUrl }}", size='43rem')
+            a(ng-click="onShorten(longUrl)" id="shortenBtn", class=["btn", "btn-warning", "btn-sm"])= "Shorten"
     .row
         .col-xs-12
             br
     .row
         .col-md-4.col-sm-6.col-xs-12
-            +panel("Results", "primary") 
+            +panel("resultsPanel", "Results", "primary") 
                 strong Long Url:
                 |  <span><a ng-cloak class='link' href='http://{{ longUrl }}'>{{ longUrl }}</a></span>
                 br
+                
                 strong Short Url:
                 |  <span><a ng-cloak class='link' href='http://localhost:3000/{{ shortUrlHash }}'>{{ shortUrl }}</a></span>
     .row

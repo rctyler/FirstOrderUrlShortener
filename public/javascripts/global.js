@@ -7,4 +7,12 @@ $(document).ready(function() {
        localPath = "/index.html";
        
     $('nav a[href="' + localPath + '"]').parent().addClass('active');
+    
+    if (sessionStorage.longUrl) {
+        $("#inputLongUrl").val(sessionStorage.longUrl);    
+    }
+    
+    $('#inputLongUrl').on('input', function() { 
+        sessionStorage.longUrl = $(this).val();
+    });
 });
