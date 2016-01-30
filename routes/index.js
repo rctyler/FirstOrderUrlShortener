@@ -39,8 +39,6 @@ router.post('/shortenUrl', function(req, res, next) {
     var db = req.db;
     var collection = db.get('urls');
 
-    // TODO: Add validation for url input
-    
     collection.find(req.body, function(err, docs) {
         var doc = docs[0];
         if (typeof doc !== 'undefined' && doc.url == req.body.url) {

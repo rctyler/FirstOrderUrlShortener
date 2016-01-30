@@ -1,5 +1,6 @@
 # FirstOrderUrlShortener
-No one needs another URL minifier, but this is the only one I know of that is Star Wars themed! Absolutely no one's using it, so be the first one and while your at it, create a pull request and make it better! This may not be the URL shortener the Internet needs, but it's what the Internet deserves.i
+
+No one needs another URL minifier, but this is the only one I know of that's Star Wars themed! Absolutely no one's using it, so be the first one! And while your at it, create a pull request and make it better...this may not be the URL shortener the Internet needs, but it's what the Internet deserves!
 
 ### To Install & Run (on Mac OSX)
 
