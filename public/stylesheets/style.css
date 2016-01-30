@@ -29,6 +29,7 @@ a.mynavbar:hover {
 
 div#resultsPanel {
     word-wrap: break-word;
+    width: 358px;
 }
 
 img#logo {
