@@ -7,7 +7,7 @@ block content
             h2 Shorten URL
     .row
        .col-xs-12
-            input#inputUserName(ng-model='longUrl' ng-change='clearShortUrl()' type='text', placeholder='Enter long url', size='43rem')
+            input#inputUserName(ng-model='longUrl' ng-change='clearShortUrl()' type='text', placeholder='Enter long url' value="{{ longUrl }}", size='43rem')
             a(ng-click="processUrl(longUrl)" id="shortenBtn", class=["btn", "btn-warning", "btn-sm"])= "Shorten"
     .row
         .col-xs-12
@@ -22,5 +22,5 @@ block content
                 |  <span><a ng-cloak class='link' href='http://localhost:3000/{{ shortUrlHash }}'>{{ shortUrl }}</a></span>
     .row
         .col-xs-12
-            p Use this simple Star Wars themed URL minifier. Your wordspace is valuable, so don't waste it with long urls that demand too much of it! 
+            p Use this simple Star Wars themed URL minifier. Your wordspace is valuable, so don't waste it with long urls that demand too much of it! Here's a cool picture... 
             img.starwars.img-responsive.img-rounded(src="http://images5.alphacoders.com/640/640375.jpg")

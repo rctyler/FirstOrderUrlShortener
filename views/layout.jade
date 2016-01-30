@@ -12,7 +12,8 @@ html( lang="en" ng-app="app")
           include ../public/stylesheets/style.css
         //- Bootswatch Theme
         +bootswatch("flatly")
-        script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js' )
+        script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js' )
+        script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.min.js' )
     body(ng-controller="appController" style="padding-bottom:10rem;")
         block navBarContent
         .container
