@@ -27,6 +27,10 @@ a.mynavbar:hover {
     font-size: 15px;
 }
 
+div#resultsPanel {
+    word-wrap: break-word;
+}
+
 img#logo {
     margin-top: 9px;
     margin-left: 15px;
