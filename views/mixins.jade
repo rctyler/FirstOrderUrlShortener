@@ -12,9 +12,3 @@ mixin panel(id, heading, style)
         .panel-heading= heading
         .panel-body
             block
-
-//- Alert mixin
-mixin alert(style)
-    div( class=["alert", "alert-dismissable", "alert-" + style] )
-        button.close( type="button", data-dismiss="alert" ) ×
-        block
